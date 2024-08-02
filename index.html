@@ -1,0 +1,223 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="subash">
+    <meta name="Description" content="subash">
+    <title>Learn HTML</title>
+    <link rel="icon" href="test.jpg" type="image/jpg">
+    <style>
+        body {
+            background-color: rgb(0, 255, 234);
+        }
+
+        table,
+        tr,
+        th,
+        td,
+        caption {
+            border: 1px solid black;
+            font-family: 'Courier New', Courier, monospace;
+            border-collapse: collapse;
+            padding: 0.5em;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <h1>Welcome to our New project</h1>
+        <h2>Topics</h2>
+        <ul>
+            <li>
+                <p>HTML</p>
+                <!-- <img src="test.jpg" alt="MY PIC" loading="lazy"> -->
+            </li>
+            <li>
+                <p>CSS</p>
+            </li>
+            <li>
+                <p>JAVASCRIPT</p>
+            </li>
+            <li>
+                <p>C#</p>
+            </li>
+
+        </ul>
+        <hr>
+        <h1><em>Today we are talking about</em> <strong>HTML</strong></h1>
+        <abbr title="hyper text markup language">HTML</abbr>
+        <br>
+        <br>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Its is a hyper text markup language</dd>
+        </dl>
+        <dl>
+            <dt>Uses</dt>
+            <dd>used for build a front end</dd>
+        </dl>
+
+    </fieldset>
+    <p>Please click the link to learn HTML</p>
+    <a href="https://www.w3schools.com/html/">LINK</a>
+    <hr>
+    <table>
+        <caption>FUN FOR FUN HARE BUN</caption>
+        <Thead>
+            <tr>
+                <th></th>
+                <th>Time</th>
+                <th colspan="2">Activity</th>
+
+            </tr>
+        </Thead>
+        <tbody>
+            <tr>
+                <th>Time</th>
+                <td><time datetime="08:00">8AM</time>-
+                    <time datetime="08:00">11AM</time>
+                </td>
+                <td colspan="3">Morning lunch</td>
+
+
+            </tr>
+            <tr>
+                <th>Time</th>
+                <td><time datetime="08:00">3AM</time>-
+                    <time datetime="08:00">5AM</time>
+                </td>
+                <td colspan="3">Afternoon lunch</td>
+
+            </tr>
+            <tr>
+                <th>Time</th>
+                <td> hello</td>
+                <td> hello</td>
+                <td> hello</td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">
+                    Thanks for creating
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+    <article id="contact" style="align-content: center;">
+        <h2>Contact me:</h2>
+        <p>I would like to hear from you</p>
+        <form action="https://httpbin.org/get" , method="get" style="align-items: center;">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <p><label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Enter the FirstName"
+                        autocomplete="on" required>
+                </p>
+                <p><label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Enter the Last  Name"
+                        autocomplete="on" required>
+                </p>
+                <p><label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Enter the Password" required>
+                </p>
+                <p><label for="phoneNo">Phone No:</label>
+                    <input type="tel" name="phoneNo" id="phoneNo" placeholder="9195655655" required>
+                        <!-- pattern="[0-9]{3}[0,9]{3}[0,9]4"> -->
+                </p>
+                <p><label for="decade">Fav decade:</label>
+                    <input type="number" name="decade" id="decade" min="1990" max="2020" value="1996" step="2">
+                </p>
+                <p>
+                    <label for="content">Fav Content:</label>
+                    <select name="content" id="content" multiple="6">
+                        <optgroup label="IT">
+                            <option value="AI">AI</option>
+                            <option value="IT">IT</option>
+                        </optgroup>
+                        <optgroup label="Manufacture">
+                            <option value="ShareMarket">Share Market</option>
+                            <option value="Manufacturing">Manufacturing</option>
+                        </optgroup>
+                        <optgroup label="Goverment">
+                            <option value="Teaching">Teaching</option>
+                            <option value="GovermentJob">Goverment Job</option>
+                        </optgroup>
+                    </select>
+
+                </p>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Your Favourite Food</legend>
+                <p>
+                    <input type="radio" name="food" id="chicken" value="chicken">
+                    <label for="chicken">Chicken Briyani</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="Mutton" value="Mutton">
+                    <label for="Mutton">Mutton Briyani</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="Prawn" value="Prawn">
+                    <label for="Prawn">Prawn Briyani</label>
+                </p>
+
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Your Favourite game</legend>
+                <p>
+                    <input type="checkbox" name="game" id="GTA" value="GTA">
+                    <label for="chicken">GTA VICE CITY</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="game" id="Pubg" value="Pubg">
+                    <label for="Mutton">Pubg</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="game" id="freefire" value="freefire">
+                    <label for="freefire">FreeFire</label>
+                </p>
+
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Send FeedBack</legend>
+                <p><textarea name="message" id="message" cols="30"
+                    rows="10" placeholder="Type your feedback here"></textarea>
+                </p>
+            </fieldset>
+           <br>
+        
+            <button type="submit">Submit</button>     
+            <button type="submit" formaction="https://httpbin.org/Post" formmethod="post">Post</button>
+            <button type="reset">Reset</button>
+            <!-- <p>
+                <label for="content">Fav Content:</label>
+               <input type="text" name ="Content" id ="Content" list="content-list">
+                   <datalist id ="content-list">
+                        <option value="AI">AI</option>
+                        <option value="IT">IT</option>                        
+                        <option value="ShareMarket">Share Market</option>
+                        <option value="Manufacturing">Manufacturing</option>                                       
+                        <option value="Teaching">Teaching</option>
+                        <option value="GovermentJob">Goverment Job</option>
+            </p> -->
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </form>
+    </article>
+    <hr>
+    <footer>
+        <h3>HTML&copy;</h3>
+    </footer>
+</body>
+
+</html>
