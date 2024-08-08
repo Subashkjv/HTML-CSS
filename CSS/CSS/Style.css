@@ -1,0 +1,68 @@
+body{
+
+    background: linear-gradient(to left, #ecc1c6, #a6d4ec);
+place-content: center;
+font-family: Arial, sans-serif;
+
+
+}
+
+.highlight{
+background-color: lightgoldenrodyellow ;
+}
+.completed{
+
+    text-decoration: line-through;
+    color: grey;
+}
+
+.removebutton{
+color: rgb(255, 80, 80);
+
+cursor:pointer;
+
+}
+.tasktext{
+    flex: 1;
+    margin-right: 10px;
+    line-height: 1.5em; /* Adjust this to control line height */
+    word-spacing: 0.5em; /* Adjust this to control word spacing */
+    max-width: 400px; /* Adjust this to control the text container width */
+
+}
+.removebuttons{
+    color: #00264d;
+    background-color: rgba(0, 0, 0, 0.192);
+    cursor:pointer;
+    margin-top: 5px;
+    
+    }
+
+    .editbutton{
+color: #003366;
+cursor: pointer;
+margin-left: 10px;
+text-decoration: underline;
+
+
+
+    }
+    #textcontrol{
+        max-width: 100px;
+    }
+    #tasklist {
+        list-style-type: decimal;
+        padding: 0;
+    }
+
+    #tasklist li {
+        display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 200%;
+            max-width: 600px;
+    
+    }
